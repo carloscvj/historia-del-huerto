@@ -1,7 +1,7 @@
 
 :root{
-    --h-color-contorno: lime;
-    --h-color-texto: white;
+    --h-color-contorno: rgba(97,255,1,1);
+    --h-color-texto: rgba(242,165,1,1);
 }
 
 h1 {
