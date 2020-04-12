@@ -5,39 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="icon" href="img/Icono.png">
-    <link rel="stylesheet" href="css/hcontorno.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap">
     <title>HuertoBalcón</title>
 </head>
 
 <body>
-    <header class="abuelos">
-        <a href="index.html">
-            <div class="cajaLogo">
-                <div class=".imgDerecha">
-                    <img src="img/Icono.png" width="64px" height="64px" alt="Icono">
-                </div>
-                <div class="logo">
-                    <div class="bienes">Huerto</div>
-                    <div class="raices">Balcón</div>
-                </div>
-            </div>
-        </a>
-        <h4 class="centrado">Mi huerto en la terraza</h4>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">HuertoBALCÓN</h2>
+            <nav>
+                <a href="#" class="activo">Inicio</a>
+                <a href="#">Programas</a>
+                <a href="#">Películas</a>
+                <a href="#">Más Recientes</a>
+                <a href="#">Mi lista</a>
+            </nav>
+        </div>
     </header>
-    <h3 class="abuelos centrado">Historia del huerto</h3>
-    <section class="abuelos">
-        <article>
-            <h5 class="centrado">Marzo 2020</h5>
-            <div class="icoArriba centrado">
-                <img src="historia/2020/03/29/IMG_20200329_081412 (2).jpg" width="512" alt="Foto del día 29 de marzo">
-            </div>            
-        </article>
-    </section>
 
+
+    <main>
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <h3 class="titulo">Interestellar</h3>
+                <p class="descripcion">
+                    Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano
+                    recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y
+                    vencer las inmensas distancias que tiene un viaje interestelar.
+                </p>
+                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+        </div>
+
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Películas Recomendadas</h3>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+                        class="fas fa-angle-left"></i></button>
+
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/03/29/IMG_20200329_081412 (2).jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/03/30/IMG_20200330_082841.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/03/31/IMG_20200331_091602.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/04/01/IMG_20200401_112946.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/04/02/IMG_20200402_084048.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/04/03/IMG_20200403_083244.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/04/04/IMG_20200404_095132.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/04/05/IMG_20200405_091517.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="historia/2020/04/06/IMG_20200406_092234.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/3.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/1.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/2.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/3.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/4.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/5.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/6.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/7.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/1.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/2.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/3.png" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="img/4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i
+                        class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
