@@ -27,7 +27,7 @@ flechaIzquierda.addEventListener('click', () => {
 });
 
 // ? ----- ----- Paginacion ----- -----
-const numeroPaginas = Math.ceil(peliculas.length / 5);
+const numeroPaginas = Math.ceil(peliculas.length);
 for(let i = 0; i < numeroPaginas; i++){
 	const indicador = document.createElement('button');
 
@@ -44,6 +44,7 @@ for(let i = 0; i < numeroPaginas; i++){
 	});
 }
 
+/*
 // ? ----- ----- Hover ----- -----
 peliculas.forEach((pelicula) => {
 	pelicula.addEventListener('mouseenter', (e) => {
@@ -58,3 +59,4 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener('mouseleave', () => {
 	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
+*/
