@@ -12,7 +12,7 @@
 
 body {
 	background: var(--fondo);
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .contenedor {
@@ -31,7 +31,6 @@ header .contenedor {
 }
 
 header .logotipo {
-	font-family: 'Bebas Neue', cursive;
 	font-weight: normal;
 	color: var(--rojo);
 	font-size: 40px;
