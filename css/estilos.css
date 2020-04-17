@@ -2,7 +2,7 @@
     --verde: #1B5400;
     --rojo: #AA0200;
     --negro: #000000;
-    --fondo: #4E3424;
+    --fondo: #6E5444;
 }
 
 * {
@@ -32,13 +32,14 @@ header {
 
 header .contenedor {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 
 header .logotipo {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@ header .logoImagen {
 }
 
 header .logoImagen img {
-    height: 64px;
+    height: 32px;
 }
 
 header .logoTexto {
@@ -170,64 +171,51 @@ header a {
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
     height: 630px;
-    width: 80%;
-
-    /*vertical-align: top;*/
+    width: 60%;
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
-@media screen and (max-width: 812px) {
-    header .logotipo {
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
 
-    header .contenedor {
-        flex-direction: column;
-        text-align: center;
-    }
-
+@media (max-height: 768px) {
     .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
-        height: 315px;
-        width: 100%;
-        /*vertical-align: top;*/
+        height: 470px;
     }
-
-
-    /*
-    .peliculas-recomendadas .contenedor-carousel {
-        overflow: visible;
+}
+@media (max-height: 600px) {
+    header .logotipo {
+        font-size: 24px;
     }
-
-    .peliculas-recomendadas .contenedor-carousel .carousel {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    header .logoImagen img {
+        height: 16px;
     }
-
-    .peliculas-recomendadas .indicadores,
-    .peliculas-recomendadas .flecha-izquierda,
-    .peliculas-recomendadas .flecha-derecha {
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
+        height: 300px;
+    }
+}
+@media (max-height: 414px) {
+    header {
         display: none;
     }
-*/
-
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
+        height: 200px;
+    }
+}
+@media (max-height: 330px) {
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
+        height: 64px;
+    }
 }
 
-@media screen and (max-width: 400px) {
-    header .logotipo {
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
 
-    header .contenedor {
-        flex-direction: column;
-        text-align: center;
-    }
 
+@media (max-width: 1024px) {
     .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
-        height: 175px;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
+        height: 300px;
         width: 100%;
-        /*vertical-align: top;*/
     }
 }
