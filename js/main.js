@@ -31,7 +31,7 @@ const numeroPaginas = Math.ceil(peliculas.length);
 for(let i = 0; i < numeroPaginas; i++){
 	const indicador = document.createElement('button');
 
-	if(i === 0){
+	if(i === (numeroPaginas - 1)){
 		indicador.classList.add('activo');
 	}
 
@@ -43,6 +43,10 @@ for(let i = 0; i < numeroPaginas; i++){
 		e.target.classList.add('activo');
 	});
 }
+
+fila.scrollLeft += fila.offsetWidth * peliculas.length;
+
+
 
 /*
 // ? ----- ----- Hover ----- -----
