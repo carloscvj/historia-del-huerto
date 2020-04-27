@@ -32,8 +32,7 @@ header {
 
 header .contenedor {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -214,6 +213,9 @@ header a {
     }
 }
 @media screen and (max-width: 600px) {
+    header .contenedor {
+        flex-wrap: wrap;
+    }
     .peliculas-recomendadas .contenedor-carousel .carousel .pelicula iframe {
         height: 300px;
         width: 100%;
